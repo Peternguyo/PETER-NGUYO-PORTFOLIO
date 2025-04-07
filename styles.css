@@ -1,3 +1,68 @@
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Wider containers on mobile */
+        padding: 15px; /* Less padding on mobile */
+    }
+
+    /* Header */
+    .header-container {
+        flex-direction: column; /* Stack title and nav vertically */
+        text-align: center; /* Center header content */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Smaller title on mobile */
+        margin-bottom: 10px; /* Spacing below title */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+    }
+
+    header nav ul li {
+        margin: 5px 0; /* Vertical spacing for nav items */
+    }
+
+    /* About */
+    #about .about-content {
+        flex-direction: column; /* Stack image and text */
+        align-items: center; /* Center items */
+    }
+
+    .profile-container {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin */
+    }
+
+    .profile-pic {
+        max-width: 120px; /* Smaller profile pic */
+    }
+
+    /* Catalogue */
+    #catalogue-carousel {
+        padding: 40px 0; /* Adjust padding */
+    }
+
+    #catalogue-carousel h2 {
+        font-size: 1.5em; /* Smaller heading */
+        margin-bottom: 20px;
+    }
+
+    .catalogue-image {
+        max-width: 100%; /* Full width image */
+    }
+
+    /* Projects */
+    #projects .container {
+        grid-template-columns: 1fr; /* Single column layout */
+    }
+
+    /* Contact */
+    #contact form {
+        max-width: 100%; /* Full width form */
+    }
+}
 /* General Styles */
 body {
     font-family: sans-serif;
